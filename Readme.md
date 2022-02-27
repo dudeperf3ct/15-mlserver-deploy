@@ -116,7 +116,9 @@ docker run --rm -it sentiment
 Test MLServer locally
 
 ```bash
+# download trained models
 bash get_models.sh
+# create a docker image
 mlserver build . -t 'sentiment-app:1.0.0'
 docker run -it --rm -p 8080:8080 -p 8081:8081 sentiment-app:1.0.0
 ```
@@ -132,4 +134,4 @@ python3  test_local_http_endpoint.py
 
 ### Additional Exercise
 
-* Deploy the MLServer application on SeldonCore or [KServe](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/).
+* Deploy the MLServer application on [SeldonCore](https://docs.seldon.io/projects/seldon-core/en/latest/) or [KServe](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/).
