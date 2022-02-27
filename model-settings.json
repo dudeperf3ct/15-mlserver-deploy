@@ -1,0 +1,8 @@
+{
+    "name": "sentiment-analysis",
+    "implementation": "models.SentimentModel",
+    "parameters": {
+        "uri": "./model-store"
+    },
+    "version": "1.0.0"
+}
